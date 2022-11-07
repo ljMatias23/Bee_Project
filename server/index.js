@@ -20,9 +20,13 @@ app.post("/api/insert", (req, res)=> {
 
     const address = req.body.address;
     const email = req.body.email;
+    const duration = req.body.duration;
+    const location = req.body.location;
+    const height = req.body.height;
+    const size = req.body.size;
 
-    const sqlINSERT = "INSERT INTO reports (address, email) VALUES (?, ?)"
-    db.query(sqlINSERT, [address, email], (err, result)=> {
+    const sqlINSERT = "INSERT INTO reports (address, email, duration, location, height, size) VALUES (?, ?, ?, ?, ?, ?)"
+    db.query(sqlINSERT, [address, email, duration, location, height, size], (err, result)=> {
         console.log(result);
     })
 });
