@@ -13,7 +13,7 @@ import * as Font from 'expo-font';import {
   TextInput} from 'react-native';
 
 
-  export default class App2 extends React.Component {
+  export default class SignUp extends React.Component {
     constructor(props) {
       super(props);
       this.state = {
