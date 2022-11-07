@@ -20,7 +20,7 @@ import * as Font from 'expo-font';import {
           fontsLoaded: false
       }
     }
-    
+
     async loadFonts() {
       await Font.loadAsync({
         'rounded-sans-serif': require('../assets/fonts/rounded-sans-serif.ttf'),
